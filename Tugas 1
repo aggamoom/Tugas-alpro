@@ -1,0 +1,26 @@
+# Membuat dictionary dengan informasi seseorang
+person_info = {
+    'nama': 'DANI',
+    'usia': 20,
+    'kota': 'Penajam Paser Utara'
+}
+
+# Membuat set dengan keahlian seseorang
+skills = {'Makan', 'Tidur', 'Jalan-jalan'}
+
+# Menambahkan set ke dalam dictionary
+person_info['keahlian'] = skills
+
+# Menampilkan informasi
+print("Informasi Person:")
+print("Nama:", person_info['nama'])
+print("Usia:", person_info['usia'])
+print("Kota:", person_info['kota'])
+print("Keahlian:", person_info['keahlian'])
+
+# Menghapus keahlian tertentu dari set
+person_info['keahlian'].remove('JavaScript')
+
+# Menampilkan informasi setelah penghapusan keahlian
+print("\nSetelah Menghapus Keahlian JavaScript:")
+print("Keahlian:", person_info['keahlian'])
